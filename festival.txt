@@ -1,0 +1,43 @@
+               Install necessory packages.sudo command to give ubuntu permission as administration:
+
+1). sudo apt-get install g++
+2). sudo apt-get install libncurses5-dev
+3). sudo apt-get install patch
+4). sudo apt-get install libx11-dev
+5). sudo apt-get install sox
+6). sudo apt-get install openjdk-7-jre_headless
+
+                                Now we have to Install following software :
+
+1). mkdir speech
+2). cd speech
+3). mkdir installation
+4). cd installation
+5). copy files_for_synthesis.tar.gz here(tar files of festival and speech tools)
+6). tar xvfz festival-2.4-release.tar.gz
+7). tar xvfz speech_tools-2.4-release.tar.gz
+
+                               Installation of Speech Tool :
+
+1). cd speech_tools
+2). ./configure
+3). make
+4). export ESTDIR='pwd'
+
+                               Installation of Festival:
+
+1). cd festival
+2). make
+3). export FESTDIR='pwd'
+4). cd ..
+
+                             Installing Festival voice for English language:
+
+1). tar xvfz festlex_CMU.tar.gz
+2). tar xvfz festlex_OALD.tar.gz
+3). tar xvfz festlex_POSLEX.tar.gz
+4). tar xvfz festvox_cmu_us_awb_cg.tar.gz
+5). tar xvfz festvox_cmu_us_rms_cg.tar.gz
+6). tar xvfz festvox_cmu_us_slt_cg.tar.gz
+7). tar xvfz festvox_kallpc16k.tar.gz
+8). tar xvfz festvox_rablpc16k.tar.gz
